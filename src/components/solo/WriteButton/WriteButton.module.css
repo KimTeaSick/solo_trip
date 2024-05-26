@@ -1,0 +1,14 @@
+.WriteButton {
+  top: 614px;
+  width: 58px;
+  left: 288px;
+  height: 58px;
+  padding: 10px;
+  display: flex;
+  position: fixed;
+  align-items: center;
+  border-radius: 100px;
+  justify-content: center;
+  background-color: #497CFF;
+  box-shadow: 0 4px 4px 0 #0B47A133;
+}

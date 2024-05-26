@@ -15,7 +15,7 @@ const Footer = () => {
 
 
   const handleMoveToTestPage = () => {
-    router.push("/test")
+    router.push("/solo")
   }
 
   const handleMoveToLoginPage = () => {

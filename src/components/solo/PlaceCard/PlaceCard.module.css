@@ -1,0 +1,28 @@
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 10px 20px 10px 20px;
+  gap: 12px;
+}
+
+.placecard {
+  width: 154px;
+  height: 301px;
+  display: flex;
+  flex-direction: column;
+
+  .solplaceName {
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 600;
+    color: #1C1C1C;
+  }
+
+  .introduction {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 500;
+    color: #5F5F5F;
+  }
+}

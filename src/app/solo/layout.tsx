@@ -3,9 +3,9 @@ import { PropsWithChildren } from 'react'
 import Footer from '../../components/layouts/Footer'
 import styles from './layout.module.css'
 
-type LoginLayoutProps = PropsWithChildren
+type SoloLayoutProps = PropsWithChildren
 
-function LoginLayout({ children }: LoginLayoutProps) {
+function SoloLayout({ children }: SoloLayoutProps) {
   return (
     <div className={styles.container}>
       {children}
@@ -14,4 +14,4 @@ function LoginLayout({ children }: LoginLayoutProps) {
   )
 }
 
-export default LoginLayout
+export default SoloLayout

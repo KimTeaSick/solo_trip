@@ -4,7 +4,9 @@ type ButtonProps = ComponentProps<'button'>
 
 function Button(props: ButtonProps) {
   return (
-    <button {...props} />
+    <button {...props} >
+      {props.children}
+    </button>
   )
 }
 

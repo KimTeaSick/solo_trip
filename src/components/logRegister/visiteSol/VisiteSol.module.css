@@ -1,0 +1,17 @@
+.visite_sol_button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 320px;
+  height: 44px;
+  border: solid 1px #C7C7C7;
+  border-radius: 4px;
+  padding: 8px 16px 8px 16px;
+
+  .title {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    color: #ABABAB;
+  }
+}

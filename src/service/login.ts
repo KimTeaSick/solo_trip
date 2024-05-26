@@ -1,5 +1,5 @@
 import { gql } from 'graphql-request';
-import { client } from '.';
+import { GraphQLU } from '.';
 
 
 const login = (email: string, password: string) => gql`
@@ -15,10 +15,13 @@ mutation{
 
 export const loginMutation = async (email: string, password: string) => {
   try {
-    const res = await client.request(login(email, password))
+    const client = new GraphQLU()
+    const res = await client.client.request(login(email, password))
     localStorage.setItem('accessToken', res.login.accessToken)
     console.log('asdsad', res)
+    return 1
   } catch {
     console.log('eer');
+    return 2
   }
 }

@@ -1,0 +1,17 @@
+.photo_button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 102px;
+  height: 102px;
+  border: 1px solid #E4E4E4;
+  border-radius: 6px;
+
+  .button_title {
+    color: #777777;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 600;
+  }
+}

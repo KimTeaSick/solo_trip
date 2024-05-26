@@ -2,7 +2,6 @@ import React, { ReactNode, useContext } from "react"
 
 type ModalContextType = {
   title: string
-  content: React.JSX.Element
   modalState: boolean
   closeButton: boolean
 }
@@ -11,7 +10,6 @@ type ModalType = ModalContextType & React.PropsWithChildren
 
 const ModalContext = React.createContext({
   title: '',
-  content: <></>,
   modalState: false,
   closeButton: false
 })
@@ -21,8 +19,8 @@ const useModalContext = () => {
   return context
 }
 
-const ModalProvider = ({ title, content, modalState, closeButton, children }: ModalType) => {
-  const value = { title, content, modalState, closeButton }
+const ModalProvider = ({ title, modalState, closeButton, children }: ModalType) => {
+  const value = { title, modalState, closeButton }
   return (
     <ModalContext.Provider value={value}>
       {children}
@@ -30,11 +28,10 @@ const ModalProvider = ({ title, content, modalState, closeButton, children }: Mo
   )
 }
 
-const ModalContent = () => {
-  const { content } = useModalContext()
+const ModalContent = ({ children }: { children: ReactNode }) => {
   return (
     <React.Fragment>
-      {content}
+      {children}
     </React.Fragment>
   )
 }
