@@ -1,3 +1,10 @@
+.container_title {
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 600;
+  color: #5F5F5F;
+}
+
 .visite_sol_button {
   display: flex;
   justify-content: space-between;

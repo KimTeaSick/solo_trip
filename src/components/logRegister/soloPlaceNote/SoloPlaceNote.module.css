@@ -1,0 +1,15 @@
+.container_title {
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 600;
+  color: #5F5F5F;
+}
+
+.solo_place_input {
+  width: 320px;
+  height: 144px;
+  padding: 16px;
+  font-size: 14px;
+  border-radius: 4px;
+  border: 1px solid #c7c7c7;
+}

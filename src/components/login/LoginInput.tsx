@@ -1,5 +1,7 @@
 import React, { ComponentProps } from 'react'
+
 import Input from '../headless/Input'
+import styles from './Login.module.css'
 
 type Props = {
   label: string
@@ -11,10 +13,10 @@ type Props = {
 
 const LoginInput = ({ label, text, type, placeholder, setState, ...rest }: Props) => {
   return (
-    <div className='input-section'>
-      <p className='label'>{label}</p>
+    <div className={styles.input_section}>
+      <p className={styles.label}>{label}</p>
       <Input text={text} type={type} placeholder={placeholder} setState={setState} >
-        <Input.Body styles='login-input' {...rest} />
+        <Input.Body styles={styles.login_input} {...rest} />
       </Input>
     </div>
   )

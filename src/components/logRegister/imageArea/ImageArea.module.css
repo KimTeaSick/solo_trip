@@ -1,14 +1,33 @@
+.container_title {
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 600;
+  color: #5F5F5F;
+  text-align: start;
+  padding: 0px 20px 0px 20px;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
 .image_container {
   gap: 10px;
   width: 100%;
   display: flex;
   overflow: scroll;
-  justify-content: start;
+  justify-content: flex-start;
   padding: 0px 20px 0px 20px;
+  box-sizing: border-box;
+  scrollbar-width: none;
 }
 
 .image_card {
   width: 102px;
   height: 102px;
   border-radius: 6px;
+  flex: 0 0 auto;
 }

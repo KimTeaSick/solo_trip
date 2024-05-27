@@ -18,10 +18,9 @@ export const loginMutation = async (email: string, password: string) => {
     const client = new GraphQLU()
     const res = await client.client.request(login(email, password))
     localStorage.setItem('accessToken', res.login.accessToken)
-    console.log('asdsad', res)
     return 1
   } catch {
     console.log('eer');
-    return 2
+    return 0
   }
 }

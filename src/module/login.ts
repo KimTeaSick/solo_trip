@@ -1,11 +1,15 @@
 import { create } from "zustand";
 
 type LoginPageStatusState = {
-  status: 0 | 1 | 2;
-  setStatus: (val: 0 | 1 | 2) => void;
+  pageStatus: 0 | 1 | 2;
+  modalStatus: boolean,
+  setPageStatus: (val: 0 | 1 | 2) => void;
+  setModalStatus: (val: boolean) => void;
 }
 
 export const useLoginPageStatus = create<LoginPageStatusState>((set) => ({
-  status: 0,
-  setStatus: (val: 0 | 1 | 2) => set((state) => ({ ...state, status: val }))
+  pageStatus: 0,
+  modalStatus: false,
+  setPageStatus: (val: 0 | 1 | 2) => set((state) => ({ ...state, pageStatus: val })),
+  setModalStatus: (val: boolean) => set((state) => ({ ...state, modalStatus: val }))
 }))
